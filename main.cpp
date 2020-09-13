@@ -19,7 +19,7 @@ int main() {
     std::cout << "Vvedite k, l, m, n" << std::endl;
     std::cin >> k >> l >> m >> n;
     g = (!n || (!l xor k) && m);
-    if (g == 1) { std::cout << "True"; }
+    if (g == 1) { std::cout << "True"<<std::endl; }
     else { std::cout << "False"<<std::endl; }
 
     std::cout << "Hello!!!!"<<std::endl;//4
