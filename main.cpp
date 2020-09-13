@@ -13,11 +13,14 @@ int main() {
     std::cin>>a;
     std::cout<<abs(a-8)-sqrt(a+3)<<std::endl;
 
-    std::cout << "Hello!!!"<<std::endl;//3
-    bool k , l, m, n;
-    std::cout<<"Vvedite k, l, m, n"<<std::endl;
-    std::cin>>k>>l>>m>>n;
-    std::cout<<(!n||(!l xor k)&&m) <<std::endl;
+       std::cout << "Hello!!!" << std::endl;//3
+    bool k, l, m, n;
+    int g;
+    std::cout << "Vvedite k, l, m, n" << std::endl;
+    std::cin >> k >> l >> m >> n;
+    g = (!n || (!l xor k) && m);
+    if (g == 1) { std::cout << "True"; }
+    else { std::cout << "False"<<std::endl; }
 
     std::cout << "Hello!!!!"<<std::endl;//4
     short int b;
