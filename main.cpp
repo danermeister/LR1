@@ -8,10 +8,11 @@ int main() {
     std::cout<<pow(3*x,2)+pow(x,3)-2<<std::endl;
 
 
-     cout << "Hello!!" << endl;//2
+    cout << "Hello!!" << endl;//2
     int a, j;
     cin >> a;
-   std::cout<< float(abs(a - 8) - sqrt(a + 3))<<std::endl;
+    std::cout.precision(3);
+    std::cout<< float(abs(a - 8) - sqrt(a + 3))<<std::endl;
 
        std::cout << "Hello!!!" << std::endl;//3
     bool k, l, m, n;
