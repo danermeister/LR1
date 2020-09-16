@@ -12,7 +12,7 @@ int main() {
     int a, j;
     cin >> a;
     std::cout.precision(3);
-    std::cout<< float(abs(a - 8) - sqrt(a + 3))<<std::endl;
+    std::cout<< const_cast<float>(abs(a - 8) - sqrt(a + 3))<<std::endl;
 
        std::cout << "Hello!!!" << std::endl;//3
     bool k, l, m, n;
