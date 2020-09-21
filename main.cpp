@@ -9,7 +9,7 @@ int main() {
 
 
     cout << "Hello!!" << endl;//2
-    int a, j;
+    int a;
     cin >> a;
     std::cout.precision(3);
     std::cout<< const_cast<float>(abs(a - 8) - sqrt(a + 3))<<std::endl;
