@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-
+using namespace std;
 int main() {
     std::cout << "Hello!" <<std::endl;//1
     int x;
@@ -12,7 +12,7 @@ int main() {
     int a;
     cin >> a;
     std::cout.precision(3);
-    std::cout<< const_cast<float>(abs(a - 8) - sqrt(a + 3))<<std::endl;
+    std::cout<< float(abs(a - 8) - sqrt(a + 3))<<std::endl;
 
        std::cout << "Hello!!!" << std::endl;//3
     bool k, l, m, n;
