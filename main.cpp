@@ -1,39 +1,37 @@
+
 #include <iostream>
 #include <cmath>
 using namespace std;
 int main() {
-    std::cout << "Hello!" <<std::endl;//1
+    cout << "Enter X: " << endl;//1
     int x;
-    std::cin>>x;
-    std::cout<<pow(3*x,2)+pow(x,3)-2<<std::endl;
+    cin >> x;
+    cout << pow(3 * x, 2) + pow(x, 3) - 2 << endl;
 
 
-    cout << "Hello!!" << endl;//2
-    int a;
-    cin >> a;
-    std::cout.precision(3);
-    std::cout<< float(abs(a - 8) - sqrt(a + 3))<<std::endl;
+    cout << "Enter X: " << endl;//2
+    cin >> x;
+    cout.precision(3);
+    cout << float(abs(x - 8) - sqrt(x + 3)) << endl;
 
-       std::cout << "Hello!!!" << std::endl;//3
-    int k, l, m, n;
+    int k, l, m, n;    //3
     bool g;
-    std::cout << "Vvedite k, l, m, n" << std::endl;
-    std::cin >> k >> l >> m >> n;
+    cout << "Vvedite k, l, m, n" << endl;
+    cin >> k >> l >> m >> n;
     g = (!n || (!l xor k) && m);
-    if (g == 1) { std::cout << "True"<<std::endl; }
-    else { std::cout << "False"<<std::endl; }
+    if (g == 1) {cout << "True" << endl; }
+    else {cout << "False" << endl; }
 
-    std::cout << "Hello!!!!"<<std::endl;//4
+    cout << "Enter X, x^2: " << endl;//4
     short int b;
-    std::cin>>b;
-    std::cout<<pow(2,b)<<std::endl;
+    cin >> b;
+    cout << pow(2, b) << endl;
 
-    std::cout << "Hello!!!!!"<<std::endl;//5
-    unsigned short f ,e ,c , d;
-    std::cout <<"Vvedite f, e, c, d"<<std::endl;
-    std::cin>>f>>e>>c>>d;
-    std::cout<<((~f|e)&(c xor ~d))<<std::endl;
-     return 0;
+    unsigned short f, e, c, d;//5
+    cout << "Vvedite f, e, c, d" << endl;
+    cin >> f >> e >> c >> d;
+    cout << ((~f | e) & (c xor ~d)) << endl;
+    return 0;
 
 
 }
