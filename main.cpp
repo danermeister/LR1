@@ -19,9 +19,10 @@ int main() {
     cout << "Vvedite k, l, m, n" << endl;
     cin >> k >> l >> m >> n;
     g = (!n || (!l xor k) && m);
-    if (g == 1) {cout << "True" << endl; }
-    else {cout << "False" << endl; }
-
+    cout.setf(ios::boolalpha);
+	bool log_false = 0,
+		log_true = 1;
+    cout<<g<<endl;
     cout << "Enter X, x^2: " << endl;//4
     short int b;
     cin >> b;
