@@ -37,7 +37,6 @@ int main() {
     cout << "Vvedite f, e, c, d" << endl;
     cin >> f >> e >> c >> d;
     j = ((~f | e) & (c xor ~d));
-    cout << hex << j
-        << endl;
+    cout << hex << setw(2) << showbase << j << endl;
     return 0;
 }
