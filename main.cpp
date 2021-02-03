@@ -1,5 +1,5 @@
-
 #include <iostream>
+#include <iomanip>
 #include <cmath>
 using namespace std;
 int main() {
@@ -14,25 +14,30 @@ int main() {
     cout.precision(3);
     cout << float(abs(x - 8) - sqrt(x + 3)) << endl;
 
-    int k, l, m, n;    //3
+    bool k, l, m, n;    //3
     bool g;
     cout << "Vvedite k, l, m, n" << endl;
     cin >> k >> l >> m >> n;
     g = (!n || (!l xor k) && m);
+    
     cout.setf(ios::boolalpha);
-	bool log_false = 0,
-		log_true = 1;
-    cout<<g<<endl;
+    bool log_false = 0,
+        log_true = 1;
+    cout << g << endl;
     cout << "Enter X, x^2: " << endl;//4
+    int h=0;
     short int b;
     cin >> b;
-    cout << pow(2, b) << endl;
+    h = pow(2, b);
+    
+    cout << dec << noshowpos << h << endl;
+    cout << oct << h << endl;
 
-    unsigned short f, e, c, d;//5
+    unsigned short int f, e, c, d, j;//5
     cout << "Vvedite f, e, c, d" << endl;
     cin >> f >> e >> c >> d;
-    cout << ((~f | e) & (c xor ~d)) << endl;
+    j = ((~f | e) & (c xor ~d));
+    cout << hex << j
+        << endl;
     return 0;
-
-
 }
