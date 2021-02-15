@@ -24,7 +24,7 @@ int main() {
     bool log_false = 0,
         log_true = 1;
     cout << g << endl;
-    cout << "Enter X, x^2: " << endl;//4
+    cout << "Enter X, 2^x: " << endl;//4
     int h=0;
     short int b;
     cin >> b;
@@ -37,6 +37,6 @@ int main() {
     cout << "Vvedite f, e, c, d" << endl;
     cin >> f >> e >> c >> d;
     j = ((~f | e) & (c xor ~d));
-    cout << hex << setw(2) << showbase << j << endl;
+    cout << setw(2)<< setfill('0')<< hex << showbase<< inrernal << j << endl;
     return 0;
 }
